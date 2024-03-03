@@ -64,6 +64,10 @@
         margin-bottom: 2px;
         border-bottom: 2px solid rgb(0,0,255);
       }
+      #start {
+        border: 2px solid red;
+        border-radius: 2px;
+      }
     </style>
   </head>
   <body>
@@ -76,6 +80,7 @@
       <p>The Alternative Spectrums is a puzzle game,</p><p>based in the bible.</p>
       <p>In this site you will get all game events, updates and launchers.</p>
       <p id="msg"></p>
+      <button id="start" href="#intro">Reload</button>
       <h2>Events</h2>
       <div id="bio-evt">
         <p>US 03/02/2024: Alternative Spectrums Begin Party at ??:00PM.</p>
@@ -97,7 +102,15 @@
     <p>                                                                                            </p>
     <script>
       var msg = document.getElementById("msg");
-      msg.textContent += "Javascript Loaded.";
+      msg.textContent = "Javascript Loaded.";
+      var btn = document.getElementById("start");
+      var btnClick = function(e){
+        var bio = document.getElementById("bio");
+        bio.innerHTML = "<p>Fatal Error</p>"+
+                        "<p>Can't load data</p>"+
+                        "<p>Reload the entire page</p>";
+      }
+      btn.addEventListener("click",btnClick);
     </script>
   </body>
 </html>
