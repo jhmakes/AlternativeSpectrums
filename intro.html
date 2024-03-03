@@ -40,6 +40,7 @@
         width: 50%;
         heigth: 25%;
         font-family: monospace;
+        border-radius: 5px;
       }
       #bio-exe {
         margin: 5px;
@@ -74,6 +75,7 @@
       <h1 id="bio-h">Welcome To The Alternative Spectrums Game Page</h1>
       <p>The Alternative Spectrums is a puzzle game,</p><p>based in the bible.</p>
       <p>In this site you will get all game events, updates and launchers.</p>
+      <p id="msg"></p>
       <h2>Events</h2>
       <div id="bio-evt">
         <p>US 03/02/2024: Alternative Spectrums Begin Party at ??:00PM.</p>
@@ -93,5 +95,9 @@
     <p>                                                                                            </p>
     <p>                                                                                            </p>
     <p>                                                                                            </p>
+    <script>
+      var msg = document.getElementById("msg");
+      msg.textContent += "Javascript Loaded.";
+    </script>
   </body>
 </html>
