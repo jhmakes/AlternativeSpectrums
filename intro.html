@@ -3,6 +3,9 @@
   <head>
     <title>Welcome</title>
     <style>
+      body {
+        background-color: rgb(90,90,90);
+      }
       #intro {
         position: fixed;
         top: 0px;
@@ -11,6 +14,8 @@
         background-color: gray;
         clear: both;
         z-index:2;
+        border-bottom: 5px solid green;
+        padding-bottom: 5px;
       }
       .intro-class {
         position: relative;
@@ -52,6 +57,10 @@
         heigth: 40%;
         font-family: monospace;
       }
+      #bio-h {
+        margin-bottom: 2px;
+        border-bottom: 2px solid green;
+      }
     </style>
   </head>
   <body>
@@ -60,7 +69,7 @@
       <h3 class="intro-class">Season 1</h3>
     </div>
     <div id="bio">
-      <h1>Welcome To The Alternative Spectrums Game Page</h1>
+      <h1 id="bio-h">Welcome To The Alternative Spectrums Game Page</h1>
       <p>The Alternative Spectrums is a puzzle game,</p><p>based in the bible.</p>
       <p>In this site you will get all game events, updates and launchers.</p>
       <h2>Events</h2>
