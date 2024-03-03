@@ -1,0 +1,5 @@
+markup store-info
+dir-name 'imgs'
+dir-path 'AlternativeSpectrums/imgs'
+file-types 3 .png .bmp .mrk
+markup end
