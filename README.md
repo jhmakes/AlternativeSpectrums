@@ -3,4 +3,4 @@ Do you really wanna enter here?
 
 Once you enter there's no way back.
 
-[Enter](https://jhmakes.gihthub.io/AlternativeSpectrums/intro.html)
+[Enter](https://jhmakes.github.io/AlternativeSpectrums/intro.html)
