@@ -18,14 +18,22 @@
       .frm {
         position: absolute;
       }
+      #frm-0 {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+      }
+      #cpu-id {
+        width: 70%;
+      }
     </style>
     
   </head>
   <body>
     <img id="cam-filter" src="imgs/CAM4.png" alt="Fatal Error: can't load image">
     <div class="frm" id="frm-0" style="z-index:1">
-      <img src="imgs/Computer.png" alt="Fatal Error: can't load image">
-      <img src="imgs/SetupLights.png" alt="Fatal Error: can't load image" class="frm" style="z-index:10">
+      <img id="cpu-id" src="imgs/Computer.png" alt="Fatal Error: can't load image">
+      <!--img id="cpu-lit" src="imgs/SetupLights.png" alt="Fatal Error: can't load image" class="frm" style="z-index:10">
     </div>
     <div class="frm" id="frm-1" style="z-index:2"></div>
     <div class="frm" id="frm-2" style="z-index:3"></div>
