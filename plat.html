@@ -33,6 +33,18 @@
     <div id="player" class="char" style="z-index:3"></div>
     <div id="front" style="z-index:4"></div>
     <script>
+      var lay = document.getElementById("mid");
+      var pl = document.createElement("img");
+      pl.src="imgs/BNTN4.png";
+      pl.alt="Fatal Error: load fail.";
+      pl.className="plat";
+      var onlay = function(e){
+        pl.style.top = e.clientY+"px";
+        pl.style.left = e.clientX+"px";
+      }
+      var onpress = function(e){
+        lay.appendChild(pl);
+      }
     </script>
   </body>
 </html>
