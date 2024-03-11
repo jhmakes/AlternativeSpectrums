@@ -12,7 +12,6 @@
       }
       .plat {
         position: absolute;
-        
       }
       .char {
         position: absolute;
@@ -40,22 +39,16 @@
     <script>
       var lay = document.getElementById("filter-img");
       var im = document.getElementById("mid");
-      var pl = document.createElement("img");
-      pl.src="imgs/POWN2.png";
-      pl.alt="Fatal Error: load fail.";
-      pl.className="plat";
-      var onlay = function(e){
+      var pl = null;
+      var onpress = function(e){
+        pl = document.createElement("img");
         pl.style.top = e.clientY+"px";
         pl.style.left = e.clientX+"px";
-      }
-      var onpress = function(e){
-        im.appendChild(pl);
-        pl = document.createElement("img");
         pl.src="imgs/POWN2.png";
         pl.alt="Fatal Error: load fail.";
         pl.className="plat";
+        im.appendChild(pl);
       }
-      var onl = lay.addEventListener("move",onlay);
       var onp = lay.addEventListener("click",onpress);
     </script>
   </body>
