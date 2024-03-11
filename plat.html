@@ -50,6 +50,10 @@
       }
       var onpress = function(e){
         im.appendChild(pl);
+        pl = document.createElement("img");
+        pl.src="imgs/POWN2.png";
+        pl.alt="Fatal Error: load fail.";
+        pl.className="plat";
       }
       var onl = lay.addEventListener("move",onlay);
       var onp = lay.addEventListener("click",onpress);
