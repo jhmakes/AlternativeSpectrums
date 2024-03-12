@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Alternative Spectrums</title>
+    <style>
+body {
+  background-color: black;
+}
+#s1logo {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  margin: 5px;
+  width: 97%;
+}
+#s1play {
+  position: absolute;
+  top: 75%;
+  left: 80%;
+  width: 25%;
+  border: 10px solid red;
+  border-radius: 10px;
+}
+#wrapper-scn1 {
+  font-family: monospace;
+  color: white;
+  margin: 25%;
+  margin-left: 40%;
+  font-size: 20px;
+  display: none;
+}
+    </style>
+  </head>
+  <body>
+  <div id="wrapper-scn0" style="z-index:1">
+      <img id="s1logo" src="../imgs/s1logo.png" alt="Image Error." style="z-index:2"><br>
+      <img id="s1play" src="../imgs/s1play.png" alt="Image Error." onclick="scns(1)" style="z-index:3">
+  </div>
+  <div id="wrapper-scn1">
+    <p>You need to<br>Wake Up</p>
+    <p>Alternative Spectrums<br>     This year.</p>
+  </div>
+    <script>
+var scn1 = function(){
+  var wrp = document.getElementById("wrapper-scn0");
+  var wr = document.getElementById("wrapper-scn1");
+  wrp.style.display = "none";
+  wr.style.display = "block";
+}
+var scns = function(x){
+  if(x==1)scn1();
+}
+    </script>
+  </body>
+</html>
