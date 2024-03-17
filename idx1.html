@@ -20,6 +20,9 @@ body {
   width: 25%;
   cursor: pointer;
 }
+.wr {
+  display: none;
+}
 #wrapper-scn1 {
   font-family: monospace;
   color: white;
@@ -28,20 +31,30 @@ body {
   font-size: 20px;
   display: none;
 }
+#pass {
+  font-family: monospace;
+  color: green;
+  border-bottom: 2px solid green;
+  background-color: black;
+}
     </style>
   </head>
   <body>
   <div id="wrapper-scn0" style="z-index:1">
-      <img id="s1logo" src="imgs/s1logo.png" alt="Image Error." style="z-index:2"><br>
-      <img id="s1play" src="imgs/s1play.png" alt="Image Error." onclick="scns(1)" style="z-index:3">
+      <img id="s1logo" src="../imgs/s1logo.png" alt="Image Error." style="z-index:2"><br>
+      <img id="s1play" src="../imgs/s1play.png" alt="Image Error." onclick="scns(1)" style="z-index:3">
   </div>
-  <div id="wrapper-scn1">
+  <div id="wrapper-scn1" class="wr">
     <!--p>You need to<br>Wake Up</p>
     <p>Alternative Spectrums<br>     This year.</p -->
     <p>The world is wrapped into darkness</p>
     <p>its our mission,<br>we will destroy the evil.</p>
     <p>Pay atention to the signals<br>and you will survive.<br>He will save we.</p><br>
-    <p>Alternative Spectrums<br>This year.</p>
+    <p style="color:pink;cursor:pointer" onclick="scns(2,this)">Alternative Spectrums<br>This year.</p>
+  </div>
+  <dic id="wrapper-scn2" class="wr">
+    <input id="pass" type="text" onchange="checkpass(this)" value="insert pass code"></input>
+    <a id="passto3" href="#" style="display:none"></a>
   </div>
     <script>
 var scn1 = function(){
@@ -50,8 +63,17 @@ var scn1 = function(){
   wrp.style.display = "none";
   wr.style.display = "block";
 }
-var scns = function(x){
+var scn2 = function(){
+  document.getElementById("wrapper-scn1").style.display = "none";
+  document.getElementById("wrapper-scn2").style.display = "block";
+}
+var checkpass = function(e){if(e.value=="W0rld1sCh4ng1ng"){
+document.getElementById("passto3").click();
+document.getElementById("wrapper-scn2").style.display="none";scn1();};}
+
+var scns = function(x,e){
   if(x==1)scn1();
+  if(x==2)scn2();
 }
     </script>
   </body>
