@@ -5,25 +5,13 @@
     <style>
 body {
   background-color: black;
+  color: white;
+  font-family: monospace;
 }
-#s1logo {
-  position: absolute;
-  top: 0%;
-  left: 0%;
-  margin: 5px;
-  width: 97%;
-}
-#s1play {
-  position: absolute;
-  top: 75%;
-  left: 80%;
-  width: 25%;
-  cursor: pointer;
-}
-.wr {
+.bf5e {
   display: none;
 }
-#wrapper-scn1 {
+#e324 {
   font-family: monospace;
   color: white;
   margin: 25%;
@@ -31,45 +19,90 @@ body {
   font-size: 20px;
   display: none;
 }
-#pass {
+#cfd5 {
+  width: 100%;
   font-family: monospace;
-  color: green;
-  border-bottom: 2px solid green;
+  color: white;
+  border: 1px solid black;
   background-color: black;
 }
     </style>
+<!--p id="keys">
+c019 image
+b9cf image id
+bf5e div class
+e324 div 1
+e9d5 div 2
+cfd5 pass id
+e62c
+b24d
+efdb
+f1ab
+a56f
+b41a
+acf0
+ca13
+cd9b
+e477
+f8f4
+cbd3
+a49e
+bf14
+ca63
+f969
+a381
+be7a
+d98a
+dd9e
+deb4
+e840
+f047
+de39
+db8c
+a7fa
+c0d8
+e66d
+edb3
+c4a1
+1eaf
+ef45
+a492
+d4e4
+e3ef
+f435
+ef7d
+</p-->
   </head>
   <body>
-  <div id="wrapper-scn0" style="z-index:1">
-      <img id="s1logo" src="imgs/s1logo.png" alt="Image Error." style="z-index:2"><br>
-      <img id="s1play" src="imgs/s1play.png" alt="Image Error." onclick="scns(1)" style="z-index:3">
-  </div>
-  <div id="wrapper-scn1" class="wr">
-    <!--p>You need to<br>Wake Up</p>
-    <p>Alternative Spectrums<br>     This year.</p -->
+  <div id="e324" class="bf5e" style="display:block">
     <p>The world is wrapped into darkness</p>
     <p>its our mission,<br>we will destroy the evil.</p>
     <p>Pay atention to the signals<br>and you will survive.<br>He will save we.</p><br>
-    <p style="color:pink;cursor:pointer" onclick="scns(2,this)">Alternative Spectrums<br>This year.</p>
+    <p style="color:rgb(245,120,140);cursor:pointer" onclick="scns(2,this)">Alternative Spectrums<br>everything was made by words</p>
   </div>
-  <dic id="wrapper-scn2" class="wr">
-    <input id="pass" type="text" onchange="checkpass(this)" value="insert pass code"></input>
-    <a id="passto3" href="#" style="display:none"></a>
+  <dic id="e9d5" class="bf5e">
+    <input id="cfd5" type="text" onchange="checkpass(this)" value="apocalipse 3:14, the church"></input>
   </div>
     <script>
-var scn1 = function(){
-  var wrp = document.getElementById("wrapper-scn0");
-  var wr = document.getElementById("wrapper-scn1");
-  wrp.style.display = "none";
-  wr.style.display = "block";
-}
 var scn2 = function(){
-  document.getElementById("wrapper-scn1").style.display = "none";
-  document.getElementById("wrapper-scn2").style.display = "block";
+  document.getElementById("e324").style.display = "none";
+  document.getElementById("e9d5").style.display = "block";
 }
-var checkpass = function(e){if(e.value=="W0rld1sCh4ng1ng"){
-document.getElementById("passto3").click();
-document.getElementById("wrapper-scn2").style.display="none";scn1();};}
+
+var startAsCtx = function(){
+  document.getElementById("e9d5").innerHTML = "<p>Alert: can't open Alternative Spectrums Context<br>"+
+  "please try again.</p>";
+  window.setTimeout(function(){document.getElementById("e9d5").innerHTML="<p style=\"color:rgb(255,145,200)\">"+
+  "don't hear them.<br>They want to trap you. They make the mistake<br>"+
+  "of not wanting you to join us. don't give up!<br>follow the signs, find us!</p>";},5000);
+}
+
+var checkpass = function(e){if(e.value=="laodiceia"){e.value = "i see you now"
+document.getElementById("e9d5").innerHTML="<br><p id=\"b9cf\">Loading...</p>"+
+"<br><p style=\"border: 1px solid white\">tip: did you know the time is coming? You should prepare youself<br>"+
+"to the travel, the path can be hard, but you will<br>"+
+"resist and survive if you trust. So pay atention!</p>";
+window.setTimeout(startAsCtx,5000);};}
 
 var scns = function(x,e){
   if(x==1)scn1();
