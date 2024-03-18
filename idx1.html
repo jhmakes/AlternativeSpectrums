@@ -1,7 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Alternative Spectrums</title>
+    <title id="ourtitle">Alternative Spectrums</title>
     <style>
 body {
   background-color: black;
@@ -17,7 +17,6 @@ body {
   margin: 25%;
   margin-left: 40%;
   font-size: 20px;
-  display: none;
 }
 #cfd5 {
   width: 100%;
@@ -25,6 +24,16 @@ body {
   color: white;
   border: 1px solid black;
   background-color: black;
+}
+#ourid {
+  width: 100%;
+  height: 50%;
+  position: fixed;
+  top: 15%;
+  left: 15%
+  margin: 15%;
+  display: block;
+  opacity: 0.2;
 }
     </style>
 <!--p id="keys">
@@ -73,17 +82,22 @@ f435
 ef7d
 </p-->
   </head>
-  <body>
+  <body onmouseover="laohide()">
+  <h1 id="ourid">We are laodiceia</h1>
   <div id="e324" class="bf5e" style="display:block">
     <p>The world is wrapped into darkness</p>
-    <p>its our mission,<br>we will destroy the evil.</p>
-    <p>Pay atention to the signals<br>and you will survive.<br>He will save we.</p><br>
-    <p style="color:rgb(245,120,140);cursor:pointer" onclick="scns(2,this)">Alternative Spectrums<br>everything was made by words</p>
+    <p>We want to show something to you</p>
+    <p>Pay atention to the signals<br>and you will survive.<br>we are waiting.</p><br>
+    <p style="color:rgb(245,120,140);cursor:pointer" onclick="scns(2,this)">Alternative Spectrums<br><span style="color:blue">click here to start<span></p>
   </div>
-  <dic id="e9d5" class="bf5e">
-    <input id="cfd5" type="text" onchange="checkpass(this)" value="apocalipse 3:14, the church"></input>
+  <div id="e9d5" class="bf5e">
+    <p>what's our name.(revelations/apocalypse 3:14), the church bible. click under to type!<span style="color:red">*reply to continue.</span></p>
+    <input id="cfd5" type="text" onchange="checkpass(this)" onclick="this.value=''" value="______________________________________"></input>
   </div>
     <script>
+var laohide = function(){
+  window.setTimeout(function(){document.getElementById("ourid").style.display="none";},250);
+}
 var scn2 = function(){
   document.getElementById("e324").style.display = "none";
   document.getElementById("e9d5").style.display = "block";
@@ -92,9 +106,9 @@ var scn2 = function(){
 var startAsCtx = function(){
   document.getElementById("e9d5").innerHTML = "<p>Alert: can't open Alternative Spectrums Context<br>"+
   "please try again.</p>";
-  window.setTimeout(function(){document.getElementById("e9d5").innerHTML="<p style=\"color:rgb(255,145,200)\">"+
+  window.setTimeout(function(){document.getElementById("e9d5").innerHTML="<p style=\"color:rgb(255,145,200);cursor:help\">"+
   "don't hear them.<br>They want to trap you. They make the mistake<br>"+
-  "of not wanting you to join us. don't give up!<br>follow the signs, find us!</p>";},5000);
+  "of not wanting you to join us. don't give up!<br>follow the signs, find us!<br><br>(revelations/apocalypse 12:1, the church bible)</p>";},5000);
 }
 
 var checkpass = function(e){if(e.value=="laodiceia"){e.value = "i see you now"
